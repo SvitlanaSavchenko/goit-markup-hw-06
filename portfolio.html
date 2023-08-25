@@ -16,29 +16,46 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <!--Header part-->
     <header class="header">
       <div class="header-container container">
         <nav class="nav">
-          <a href="./index.html" class="logo-header logo-blu link">
+          <a class="logo-header brend-color link" href="./index.html">
             Web<span class="logo-dark">Studio</span>
           </a>
           <ul class="nav-list list">
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-link link">Studio</a>
+              <a class="nav-link link" href="./index.html">Studio</a>
             </li>
             <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-link current link"
+              <a class="nav-link current link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li class="nav-list-item">
-              <a href="" class="nav-link link">Contacts</a>
+              <a class="nav-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+        <button
+          class="mobile-menu-open-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="mobile-menu-open-icon"
+            width="32"
+            height="22"
+            aria-label="Open mobile menu button"
+            stroke="var(--hero-backgroound-color-grey, #2e2f42)"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="header-adress">
           <ul class="adress-list list">
             <li class="adress-list-item">
@@ -83,10 +100,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/banking.jpg"
+                    srcset="
+                      ./images/portfolio/banking-mobile-1x.jpg  396w,
+                      ./images/portfolio/banking-mobile-1x.jpg  792w,
+                      ./images/portfolio/banking-tablet-1x.jpg  356w,
+                      ./images/portfolio/banking-tablet-1x.jpg  712w,
+                      ./images/portfolio/banking-desktop-1x.jpg 360w,
+                      ./images/portfolio/banking-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/banking-mobile-1x.jpg"
                     alt="Image Banking App Interface"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -105,10 +129,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/cashless.jpg"
+                    srcset="
+                      ./images/portfolio/cashless-mobile-1x.jpg  396w,
+                      ./images/portfolio/cashless-mobile-1x.jpg  792w,
+                      ./images/portfolio/cashless-tablet-1x.jpg  356w,
+                      ./images/portfolio/cashless-tablet-1x.jpg  712w,
+                      ./images/portfolio/cashless-desktop-1x.jpg 360w,
+                      ./images/portfolio/cashless-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/cashless-mobile-1x.jpg"
                     alt="Photo Cashless Payment"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -127,10 +158,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/meditation.jpg"
+                    srcset="
+                      ./images/portfolio/meditation-mobile-1x.jpg  396w,
+                      ./images/portfolio/meditation-mobile-1x.jpg  792w,
+                      ./images/portfolio/meditation-tablet-1x.jpg  356w,
+                      ./images/portfolio/meditation-tablet-1x.jpg  712w,
+                      ./images/portfolio/meditation-desktop-1x.jpg 360w,
+                      ./images/portfolio/meditation-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/meditation-mobile-1x.jpg"
                     alt="Meditation App Image on Desktop and Mobile"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -149,10 +187,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/taxi.jpg"
+                    srcset="
+                      ./images/portfolio/taxi-mobile-1x.jpg  396w,
+                      ./images/portfolio/taxi-mobile-1x.jpg  792w,
+                      ./images/portfolio/taxi-tablet-1x.jpg  356w,
+                      ./images/portfolio/taxi-tablet-1x.jpg  712w,
+                      ./images/portfolio/taxi-desktop-1x.jpg 360w,
+                      ./images/portfolio/taxi-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/taxi-mobile-1x.jpg"
                     alt="Taxi Service Image"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -171,10 +216,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/screen.jpg"
+                    srcset="
+                      ./images/portfolio/screen-mobile-1x.jpg  396w,
+                      ./images/portfolio/screen-mobile-1x.jpg  792w,
+                      ./images/portfolio/screen-tablet-1x.jpg  356w,
+                      ./images/portfolio/screen-tablet-1x.jpg  712w,
+                      ./images/portfolio/screen-desktop-1x.jpg 360w,
+                      ./images/portfolio/screen-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/screen-mobile-1x.jpg"
                     alt="Screen Illustrations Image"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -193,10 +245,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/online.jpg"
+                    srcset="
+                      ./images/portfolio/online-mobile-1x.jpg  396w,
+                      ./images/portfolio/online-mobile-1x.jpg  792w,
+                      ./images/portfolio/online-tablet-1x.jpg  356w,
+                      ./images/portfolio/online-tablet-1x.jpg  712w,
+                      ./images/portfolio/online-desktop-1x.jpg 360w,
+                      ./images/portfolio/online-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/online-mobile-1x.jpg"
                     alt="Girl with Mobile on Online Courses"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -215,10 +274,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/instagram.jpg"
+                    srcset="
+                      ./images/portfolio/instagram-mobile-1x.jpg  396w,
+                      ./images/portfolio/instagram-mobile-1x.jpg  792w,
+                      ./images/portfolio/instagram-tablet-1x.jpg  356w,
+                      ./images/portfolio/instagram-tablet-1x.jpg  712w,
+                      ./images/portfolio/instagram-desktop-1x.jpg 360w,
+                      ./images/portfolio/instagram-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/instagram-mobile-1x.jpg"
                     alt="instagram Stories Image"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -237,10 +303,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/organic.jpg"
+                    srcset="
+                      ./images/portfolio/organic-mobile-1x.jpg  396w,
+                      ./images/portfolio/organic-mobile-1x.jpg  792w,
+                      ./images/portfolio/organic-tablet-1x.jpg  356w,
+                      ./images/portfolio/organic-tablet-1x.jpg  712w,
+                      ./images/portfolio/organic-desktop-1x.jpg 360w,
+                      ./images/portfolio/organic-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/organic-mobile-1x.jpg"
                     alt="Photo with Organic Food"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -259,10 +332,17 @@
                 <div class="portfolio-overlay">
                   <img
                     class="portfolio-img"
-                    src="./images/portfolio/coffee.jpg"
+                    srcset="
+                      ./images/portfolio/coffee-mobile-1x.jpg  396w,
+                      ./images/portfolio/coffee-mobile-1x.jpg  792w,
+                      ./images/portfolio/coffee-tablet-1x.jpg  356w,
+                      ./images/portfolio/coffee-tablet-1x.jpg  712w,
+                      ./images/portfolio/coffee-desktop-1x.jpg 360w,
+                      ./images/portfolio/coffee-desktop-1x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 396px"
+                    src="./images/portfolio/coffee-mobile-1x.jpg"
                     alt="Photo with Cup of Fresh Coffee"
-                    width="360"
-                    height="300"
                   />
                   <p class="portfolio-overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -284,7 +364,7 @@
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-logo-wrap">
-          <a href="./index.html" class="logo-footer logo-blu link">
+          <a class="logo-footer brend-color link" href="./index.html">
             Web<span class="logo-light">Studio</span>
           </a>
           <p class="text-footer">
@@ -292,6 +372,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
+
         <div class="footer-icon-wrap">
           <p class="footer-icon-title">Social media</p>
           <ul class="footer-icon-list">
@@ -366,7 +447,7 @@
                 class="footer-sub-icon"
                 width="24"
                 height="24"
-                aria-label="icon-send"
+                aria-label="Icon send"
               >
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -375,5 +456,105 @@
         </div>
       </div>
     </footer>
+    <!--Mobile menu-->
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-wrapper">
+        <button
+          class="mobile-menu-close-btn js-close-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="mobile-menu-close-icon"
+            aria-label="Close mobile menu button"
+            width="8"
+            height="8"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav-list list">
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-link current link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="mobile-menu-header-adress">
+          <ul class="mobile-menu-adress-list list">
+            <li class="mobile-menu-adress-list-item">
+              <a
+                class="mobile-menu-adress-link-phone link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-adress-list-item">
+              <a
+                class="mobile-menu-adress-link-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social-list list">
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link link"
+              href=""
+              target="_blank"
+              rel="noopener norefferer"
+              aria-label="Instagram icon"
+            >
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link link"
+              href=""
+              aria-label="Twitter icon"
+            >
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link link"
+              href=""
+              aria-label="Facebook icon"
+            >
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link link"
+              href=""
+              aria-label="Linkedin icon"
+            >
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

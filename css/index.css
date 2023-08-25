@@ -1,0 +1,16 @@
+@import "./utils/variables.css";
+
+@import "./base/common.css";
+@import "./base/container.css";
+
+@import "./layout/header.css";
+@import "./layout/footer.css";
+
+@import "./layout/hero-section.css";
+@import "./layout/advantage-section.css";
+@import "./layout/our-works.css";
+@import "./layout/team.css";
+@import "./layout/our-clients-section.css";
+
+@import "./layout/mobile-menu.css";
+@import "./layout/modal-window.css";

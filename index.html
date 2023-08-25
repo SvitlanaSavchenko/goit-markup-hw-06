@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -21,21 +22,37 @@
     <header class="header">
       <div class="header-container container">
         <nav class="nav">
-          <a href="./index.html" class="logo-header logo-blu link">
+          <a class="logo-header brend-color link" href="./index.html">
             Web<span class="logo-dark">Studio</span>
           </a>
           <ul class="nav-list list">
             <li class="nav-list-item">
-              <a href="./index.html" class="nav-link current link">Studio</a>
+              <a class="nav-link current link" href="./index.html">Studio</a>
             </li>
             <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+              <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav-list-item">
-              <a href="" class="nav-link link">Contacts</a>
+              <a class="nav-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+        <button
+          class="mobile-menu-open-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="mobile-menu-open-icon"
+            width="32"
+            height="22"
+            aria-label="Open mobile menu button"
+            stroke="var(--hero-backgroound-color-grey, #2e2f42)"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="header-adress">
           <ul class="adress-list list">
             <li class="adress-list-item">
@@ -57,8 +74,8 @@
       <!--Hero section-->
       <section class="hero hero-background-image">
         <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button" data-modal-open>
+          <h1 class="hero-title">effective solutions for your business</h1>
+          <button class="hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -147,7 +164,11 @@
             <li class="works-list-item">
               <img
                 class="works-list-img"
-                src="./images/our-works/img_monitor.jpg"
+                srcset="
+                  ./images/our-works/img_monitor-1x.jpg,
+                  ./images/our-works/img_monitor-2x.jpg
+                "
+                src="./images/our-works/img_monitor-1x.jpg"
                 alt="Research on desktop"
                 width="360"
                 height="300"
@@ -156,7 +177,11 @@
             <li class="works-list-item">
               <img
                 class="works-list-img"
-                src="./images/our-works/img_design.jpg"
+                srcset="
+                  ./images/our-works/img_design-1x.jpg,
+                  ./images/our-works/img_design-2x.jpg
+                "
+                src="./images/our-works/img_design-1x.jpg"
                 alt="Mobile design"
                 width="360"
                 height="300"
@@ -165,7 +190,11 @@
             <li class="works-list-item">
               <img
                 class="works-list-img"
-                src="./images/our-works/img_mobile.jpg"
+                srcset="
+                  ./images/our-works/img_mobile-1x.jpg,
+                  ./images/our-works/img_mobile-2x.jpg
+                "
+                src="./images/our-works/img_mobile-1x.jpg"
                 alt="Product app"
                 width="360"
                 height="300"
@@ -182,7 +211,11 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/our-team/mark_guerrero.jpg"
+                srcset="
+                  ./images/our-team/mark_guerrero-1x.jpg,
+                  ./images/our-team/mark_guerrero-2x.jpg
+                "
+                src="./images/our-team/mark_guerrero-1x.jpg"
                 alt="photo employee Mark Guerrero"
                 width="264"
                 height="260"
@@ -192,7 +225,7 @@
                 <p class="team-title-employee">Product Designer</p>
                 <ul class="team-list-icons list">
                   <li class="team-item-icon">
-                    <a href="" class="team-link-icon">
+                    <a class="team-link-icon" href="">
                       <svg
                         class="team-icon"
                         aria-label="social icon instagram"
@@ -204,7 +237,7 @@
                     </a>
                   </li>
                   <li class="team-item-icon">
-                    <a href="" class="team-link-icon">
+                    <a class="team-link-icon" href="">
                       <svg
                         class="team-icon"
                         aria-label="social icon twitter"
@@ -216,7 +249,7 @@
                     </a>
                   </li>
                   <li class="team-item-icon">
-                    <a href="" class="team-link-icon">
+                    <a class="team-link-icon" href="">
                       <svg
                         class="team-icon"
                         aria-label="social icon facebook"
@@ -228,7 +261,7 @@
                     </a>
                   </li>
                   <li class="team-item-icon">
-                    <a href="" class="team-link-icon">
+                    <a class="team-link-icon" href="">
                       <svg
                         class="team-icon"
                         aria-label="social icon linkedin"
@@ -245,7 +278,11 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/our-team/tom_ford.jpg"
+                srcset="
+                  ./images/our-team/tom_ford-1x.jpg,
+                  ./images/our-team/tom_ford-2x.jpg
+                "
+                src="./images/our-team/tom_ford-1x.jpg"
                 alt="photo employee Tom Ford"
                 width="264"
                 height="260"
@@ -308,7 +345,11 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/our-team/camila_garsia.jpg"
+                srcset="
+                  ./images/our-team/camila_garsia-1x.jpg,
+                  ./images/our-team/camila_garsia-2x.jpg
+                "
+                src="./images/our-team/camila_garsia-1x.jpg"
                 alt="photo employee Camila Garcia"
                 width="264"
                 height="260"
@@ -371,7 +412,11 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
-                src="./images/our-team/daniel_wilson.jpg"
+                srcset="
+                  ./images/our-team/daniel_wilson-1x.jpg,
+                  ./images/our-team/daniel_wilson-2x.jpg
+                "
+                src="./images/our-team/daniel_wilson-1x.jpg"
                 alt="photo employee Daniel Wilson"
                 width="264"
                 height="260"
@@ -519,7 +564,7 @@
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-logo-wrap">
-          <a href="./index.html" class="logo-footer logo-blu link">
+          <a class="logo-footer brend-color link" href="./index.html">
             Web<span class="logo-light">Studio</span>
           </a>
           <p class="text-footer">
@@ -602,7 +647,7 @@
                 class="footer-sub-icon"
                 width="24"
                 height="24"
-                aria-label="icon-send"
+                aria-label="Icon send"
               >
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -711,6 +756,108 @@
         </form>
       </div>
     </div>
+    <!--Mobile menu-->
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-wrapper">
+        <button
+          class="mobile-menu-close-btn js-close-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="mobile-menu-close-icon"
+            aria-label="Close mobile menu button"
+            width="8"
+            height="8"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav-list list">
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-link current link" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-link link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="mobile-menu-header-adress">
+          <ul class="mobile-menu-adress-list list">
+            <li class="mobile-menu-adress-list-item">
+              <a
+                class="mobile-menu-adress-link-phone link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-adress-list-item">
+              <a
+                class="mobile-menu-adress-link-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social-list list">
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link link"
+              href=""
+              target="_blank"
+              rel="noopener norefferer"
+              aria-label="Instagram icon"
+            >
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link link"
+              href=""
+              aria-label="Twitter icon"
+            >
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link link"
+              href=""
+              aria-label="Facebook icon"
+            >
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              class="mobile-menu-social-link link"
+              href=""
+              aria-label="Linkedin icon"
+            >
+              <svg class="mobile-menu-social-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
