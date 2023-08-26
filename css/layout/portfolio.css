@@ -73,8 +73,8 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
   row-gap: 48px;
+  column-gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
