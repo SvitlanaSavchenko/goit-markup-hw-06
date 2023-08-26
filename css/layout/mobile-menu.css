@@ -119,11 +119,16 @@
 .mobile-menu-adress-link-phone {
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--primary-brand-color-iris);
+}
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
+  .mobile-menu-adress-link-phone {
+    font-size: 36px;
+  }
 }
 
 .mobile-menu-adress-link-mail {
